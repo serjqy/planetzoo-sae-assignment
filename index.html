@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Planet Zoo - Zoo and Safari Park</title>
+    <script
+      src="https://kit.fontawesome.com/60c94ed1cd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="header__wrapper container">
+          <button class="btn btn-tertiary btn-menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <a href="/" class="header__brand">
+            <img src="/logo.png" alt="Planet Zoo Logo" class="header__logo" />
+          </a>
+          <nav class="nav">
+            <div class="nav__wrapper">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="/index.html" class="nav__link"
+                    >Home <i class="fa-solid fa-arrow-right fa-active"></i
+                  ></a>
+                </li>
+                <li class="nav__item">
+                  <a href="/src/layout/about.html" class="nav__link"
+                    >About <i class="fa-solid fa-arrow-right fa-active"></i
+                  ></a>
+                </li>
+                <li class="nav__item">
+                  <a href="/src/layout/gallery.html" class="nav__link"
+                    >Gallery <i class="fa-solid fa-arrow-right fa-active"></i
+                  ></a>
+                </li>
+                <li class="nav__item">
+                  <a href="/src/layout/contact.html" class="nav__link"
+                    >Contact <i class="fa-solid fa-arrow-right fa-active"></i
+                  ></a>
+                </li>
+              </ul>
+              <div class="nav__cta">
+                <a href="/src/layout/donation.html" class="btn btn-secondary"
+                  >Conservation</a
+                >
+              </div>
+            </div>
+          </nav>
+          <a
+            href="/src/layout/tickets.html"
+            class="header__cta btn btn-tertiary"
+            >Tickets</a
+          >
+        </div>
+      </header>
+      <main class="main">
+        <section class="hero">
+          <div class="hero__wrapper container">
+            <div class="hero__content">
+              <h2>Visit Planet Zoo</h2>
+              <h1>All you need is love and treats… <br />Lots of treats.</h1>
+              <div class="hero__cta">
+                <a href="/src/layout/tickets.html" class="btn btn-tertiary"
+                  >Book Day Tickets</a
+                >
+                <a href="/src/layout/donation.html" class="btn btn-primary"
+                  >Sponsor Loved Ones</a
+                >
+              </div>
+            </div>
+            <figure class="video">
+              <div class="video__wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/mDHlHdFwek0"
+                  title="Planet Zoo Safari Tour"
+                  frameborder="0"
+                  height="320"
+                  width="576"
+                  allowfullscreen
+                  class="video__source"
+                >
+                </iframe>
+              </div>
+            </figure>
+          </div>
+        </section>
+        <section class="section about">
+          <div class="about__wrapper container">
+            <div class="section__header">
+              <h2 class="section__subtitle">It's a zoo in here</h2>
+              <h1 class="section__title">Amazing Animals In our Zoo</h1>
+              <p class="section__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent neque ligula, cursus a massa sed, consectetur malesuada
+                dui.
+              </p>
+            </div>
+            <div class="about__content">
+              <figure class="figure">
+                <a href="/src/layout/gallery_single.html?animal=jackal"
+                  ><img
+                    src="/jackal.png"
+                    alt="Jackal Image"
+                    class="figure__img"
+                /></a>
+                <figcaption class="figure__caption">
+                  <span>689</span>
+                  Animals
+                </figcaption>
+              </figure>
+              <div class="stats">
+                <div class="stats__wrapper">
+                  <header class="stats__header">
+                    <h2 class="stats__title">Amazing Animals In our Zoo</h2>
+                  </header>
+                  <div class="stats__grid">
+                    <div class="stats__item">
+                      <span class="stats__item__label">Mass</span>
+                      <span class="stats__item__value">11 – 12 kg</span>
+                    </div>
+                    <div class="stats__item">
+                      <span class="stats__item__label">Speed</span>
+                      <span class="stats__item__value">16 km/hr</span>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="stats__item">
+                      <span class="stats__item__label">Lifespan</span>
+                      <span class="stats__item__value">8 – 10 years</span>
+                    </div>
+                    <div class="stats__item">
+                      <span class="stats__item__label">Diet</span>
+                      <span class="stats__item__value">Deer, Cows</span>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="stats__item">
+                      <span class="stats__item__label">Common Name</span>
+                      <span class="stats__item__value">Jackal</span>
+                    </div>
+                    <div class="stats__item">
+                      <span class="stats__item__label">Scientific Name</span>
+                      <span class="stats__item__value">Canis aureus</span>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="stats__item">
+                      <span class="stats__item__label">Type</span>
+                      <span class="stats__item__value">Omnivorous</span>
+                    </div>
+                    <div class="stats__item">
+                      <span class="stats__item__label">Gestation Period</span>
+                      <span class="stats__item__value">61 days</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section gallery">
+          <div class="swiper gallery-swiper">
+            <div class="swiper-wrapper gallery-list">
+              <!-- Animals Slides -->
+            </div>
+            <button class="gallery-swiper__prev">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button class="gallery-swiper__next">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+        </section>
+        <section class="section review">
+          <div class="review__wrapper container">
+            <div class="section__header">
+              <h2 class="section__subtitle">It's a zoo in here</h2>
+              <h1 class="section__title">What they have to say?</h1>
+              <p class="section__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent neque ligula, cursus a massa sed, consectetur malesuada
+                dui.
+              </p>
+            </div>
+            <div class="review__list">
+              <div class="review__item">
+                <span class="review__item__quote"
+                  ><i class="fa-solid fa-quote-left"></i
+                ></span>
+                <div>
+                  <p class="review__item__desc">
+                    Absolutely amazing zoo and my favourite in the UK! I mainly
+                    visited as I wanted to see a sloth, and I wasn't
+                    disappointed. The restaurant there is so nice and does
+                    amazing food for fair prices.
+                  </p>
+                  <h2 class="review__item__name">Davinci Williams</h2>
+                </div>
+              </div>
+              <div class="review__item">
+                <span class="review__item__quote"
+                  ><i class="fa-solid fa-quote-left"></i
+                ></span>
+                <div>
+                  <p class="review__item__desc">
+                    For a zoo, this attraction is so well organised and child
+                    friendly. A full day of 10:00 - 16:00 here was not nearly
+                    enough to see all the exhibits with sufficient time to fully
+                    appreciate the varying personalities of the animals in their
+                    magnificent enclosures.
+                  </p>
+                  <h2 class="review__item__name">Dean Winchester</h2>
+                </div>
+              </div>
+              <div class="review__item">
+                <span class="review__item__quote"
+                  ><i class="fa-solid fa-quote-left"></i
+                ></span>
+                <div>
+                  <p class="review__item__desc">
+                    I always enjoy my visits to London Zoo. I will never take
+                    for granted how lucky I am to have this beautiful collection
+                    of some of the world’s most wonderful animal species a tube
+                    and bus ride from my house.
+                  </p>
+                  <h2 class="review__item__name">Jack Albert</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section donate">
+          <div class="donate__wrapper container">
+            <div class="section__header">
+              <h2 class="section__subtitle">It's a zoo in here</h2>
+              <h1 class="section__title">Donate for Wildlife</h1>
+              <p class="section__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent neque ligula, cursus a massa sed, consectetur malesuada
+                dui.
+              </p>
+            </div>
+
+            <div class="swiper donate-swiper">
+              <div class="swiper-wrapper donate-list">
+                <!-- Donate Slides -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="newsletter">
+          <div class="newsletter__wrapper container">
+            <div class="newsletter__content">
+              <h2 class="newsletter__content-subtitle">It's a zoo in here</h2>
+              <h1 class="newsletter__content-title">
+                Amazing Animals In our Zoo
+              </h1>
+              <p class="newsletter__content-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent neque ligula, cursus a massa sed, consectetur malesuada
+                dui.
+              </p>
+            </div>
+            <div class="newsletter__cta">
+              <h2 class="newsletter__cta-title">Subscribe to Newsletter</h2>
+              <form action="#" class="newsletter__cta-form">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="newsletter__cta-name"
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="newsletter__cta-email"
+                />
+                <button class="btn btn-tertiary newsletter__cta-submit">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrapper container">
+          <div class="footer__content">
+            <a href="#" class="footer__brand">
+              <img src="/logo.png" alt="Planet Zoo Logo" class="footer__logo" />
+              <span class="footer__title">Planet Zoo</span>
+            </a>
+            <p class="footer__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vestibulum dui sed mi mattis, ut tristique ligula iaculis. Sed
+              dictum, turpis placerat venenatis dapibus, purus urna tincidunt
+              odio.
+            </p>
+            <div class="footer__social">
+              <ul class="footer__social-list" role="list">
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link" aria-label="Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__cta">
+            <div class="footer__column footer__column--company">
+              <h2 class="footer__column-title">Company</h2>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="./index.html" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                  <a href="./src/layout/about.html" class="footer__link"
+                    >About Us</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="./src/layout/gallery.html" class="footer__link"
+                    >Gallery</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="./src/layout/tickets.html" class="footer__link"
+                    >Tickets</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="/src/layout/donation.html" class="footer__link"
+                    >Donation</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__column footer__column--animals">
+              <h2 class="footer__column-title">Animals</h2>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a
+                    href="/src/layout/gallery_single.html?animal=jackal"
+                    class="footer__link"
+                    >Jackal</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    href="/src/layout/gallery_single.html?animal=elephant"
+                    class="footer__link"
+                    >Elephant</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    href="/src/layout/gallery_single.html?animal=zebra"
+                    class="footer__link"
+                    >Zebra</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    href="/src/layout/gallery_single.html?animal=tiger"
+                    class="footer__link"
+                    >Tiger</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    href="/src/layout/gallery_single.html?animal=deer"
+                    class="footer__link"
+                    >Deer</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    href="/src/layout/gallery_single.html?animal=bear"
+                    class="footer__link"
+                    >Bear</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__column footer__column--links">
+              <h2 class="footer__column-title">Links</h2>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Privacy Policy</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Terms & Conditions</a>
+                </li>
+                <li class="footer__item">
+                  <a href="/src/layout/contact.html" class="footer__link"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
