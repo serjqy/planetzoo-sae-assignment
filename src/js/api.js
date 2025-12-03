@@ -3,19 +3,23 @@ export async function initTimeDate() {
 
   if (!dateContainer) return;
 
-  const url = "http://worldtimeapi.org/api/ip";
+  const url = "https://timeapi.io/api/Time/current/zone?timeZone=UTC";
 
   try {
     const response = await fetch(url);
+    if (!response.ok) throw new Error("Failed to fetch time");
+
     const result = await response.json();
-    const formattedTime = result.datetime.slice(0, 10);
-    const abbr = result.abbreviation;
+
+    const formattedDate = result.date;
+    const formattedTime = result.time;
 
     const dateEl = document.createElement("p");
     dateEl.classList.add("order-summary-item");
-    dateEl.textContent = `${abbr} ${formattedTime}`;
+    dateEl.textContent = `${formattedDate} ${formattedTime}`;
+
     dateContainer.appendChild(dateEl);
   } catch (error) {
-    console.error(error);
+    console.error("Time API error:", error);
   }
 }
