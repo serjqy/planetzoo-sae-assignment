@@ -12,21 +12,23 @@ import { initDonateSwiper } from "./donation_swiper";
 import { initTicketOrder } from "./tickets-order";
 import { initTimeDate } from "./api";
 
-initGallerySwiper();
-initDonateSwiper();
+document.addEventListener("DOMContentLoaded", () => {
+  initTimeDate();
 
-initNavbar();
-initContact();
+  initGallerySwiper();
+  initDonateSwiper();
 
-buildCards();
+  initNavbar();
+  initContact();
 
-animalSingle();
-payInit();
+  buildCards();
 
-newsletterInit();
+  animalSingle();
+  payInit();
 
-faqInit();
+  newsletterInit();
 
-initTicketOrder();
+  faqInit();
 
-initTimeDate();
+  initTicketOrder();
+});
