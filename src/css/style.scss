@@ -147,6 +147,7 @@ a {
   position: fixed;
   inset: 0 0 auto;
   z-index: 1000;
+
   &__wrapper {
     height: 100px;
     background-color: #ffffff;
@@ -158,6 +159,7 @@ a {
     gap: 25px;
     border: 1px solid #10101052;
     box-shadow: 0 0 5px #10101052;
+
     @media (max-width: 1024px) {
       &.active {
         border-bottom-left-radius: 0;
@@ -833,6 +835,7 @@ a {
       &-methods,
       &-personal {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        margin-bottom: 2rem;
       }
     }
 
@@ -877,6 +880,14 @@ a {
       padding: 0 20px;
       font-size: 1rem;
       transition: all 0.2s ease;
+    }
+  }
+
+  .input-error,
+  .input-error2,
+  .input-error3 {
+    p {
+      font-size: 1.25rem;
     }
   }
 

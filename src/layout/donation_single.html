@@ -102,7 +102,7 @@
             <form class="pay__form">
               <fieldset class="pay__group pay__group-amount">
                 <legend class="pay__title">Donation Amount</legend>
-                <div class="pay__row" role="radiogroup">
+                <div class="pay__row">
                   <input
                     type="radio"
                     name="amount"
@@ -266,6 +266,7 @@
                   <label for="amt-18k" class="pay__label">18k</label>
                 </div>
               </fieldset>
+              <div class="input-error3"></div>
               <fieldset class="pay__group pay__group-type">
                 <legend class="pay__title">Select Payment Method</legend>
                 <div class="pay__row pay__row-methods" role="radiogroup">
@@ -284,7 +285,6 @@
                     id="pm-offline"
                     value="offline"
                     class="pay__input"
-                    checked
                   />
                   <label for="pm-offline" class="pay__label"
                     >Offline Donation</label
@@ -299,6 +299,7 @@
                   />
                   <label for="pm-test" class="pay__label">Test Donation</label>
                 </div>
+                <div class="input-error2"></div>
               </fieldset>
               <fieldset class="pay__group">
                 <legend class="pay__title">Personal Information</legend>
@@ -308,23 +309,21 @@
                     name="fullName"
                     placeholder="Enter Your Full Name"
                     class="pay__input"
-                    required
                   />
                   <input
                     type="tel"
                     name="phone"
                     placeholder="Enter Your Phone"
                     class="pay__input"
-                    required
                   />
                   <input
                     type="email"
                     name="email"
                     placeholder="Enter Your Email"
                     class="pay__input"
-                    required
                   />
                 </div>
+                <div class="input-error"></div>
               </fieldset>
 
               <button class="btn btn-tertiary" type="submit">Submit</button>
